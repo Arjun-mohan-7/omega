@@ -1,0 +1,119 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  
+  background: linear-gradient(to bottom, #ADD8E6, blue);
+ 
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+select {
+  height: 35px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+}
+
+nav {
+  background-color: #000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Header Section */
+header {
+  background-color: #000;
+  text-align: center;
+  padding: 10px 0;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+}
+footer {
+  background-color: black;
+
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+<link rel="stylesheet" href="signup.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="./index.html" class="logo">
+                <img src="https://www.adobe.com/express/learn/blog/media_196e5176585a00903655922c802ee1e507bb0a6e8.png?width=750&format=png&optimize=medium" alt="Logo" style="width: 100px; height: auto;">
+            
+            <li><a href="./signin.html">Sign in</a></li>
+            <li><a href="./signup.html">Registration</a></li>
+            <li><a href="./aboutus.html">About us</a></li>
+            <li><a href="./contactus.html">Contact us</a></li>
+        </ul>
+    </nav>        
+    
+</header>
+  <h2 style="color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;">Registration Form</h2>
+  <form  method="POST">
+    <label for="first_name" style="color: black;">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required>
+    <span id="first_name_error" class="error-message"></span><br>
+
+    <label for="last_name" style="color: black;">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required>
+    <span id="last_name_error" class="error-message"></span><br>
+
+    <label for="dob" style="color: black;">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required onchange="calculateAge()" max="2023-06-16"><br>
+
+    <label for="age" style="color: black;">Age:</label>
+    <input type="number" id="age" name="age" required readonly><br>
+
+    <label for="gender" style="color: black;">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br>
+
+    <label for="phone" style="color: black;">Phone Number:</label>
+    <input type="number" id="phone" name="phone" required>
+    <span id="phoneError" class="error-message"></span><br>
+
+    <label for="email" style="color: black;">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+    <span id="emailError" class="error-message"></span><br>
+
+    <label for="address" style="color: black;">Address:</label>
+    <textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
+
+    <label for="state" style="color: black;">State:</label>
+    <select id="state" name="state" required onchange="populateCities()">
+      <option value="state1">Select</option>
+      <option value="state2">Tamilnadu</option>
+      <option value="state3">Kerala</option>
+    </select><br>
+
+    <label for="city" style="color: black;">City:</label>
+    <select id="city" name="city" required>
+    </select>
+    <span id="cityError" class="error-message"></span><br>
+
+    <label for="username" style="color: black;">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+
+    <label for="password" style="color: black;">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+
+    <label for="confirm_password" style="color: black;">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+    <span id="passwordError" class="error-message"></span><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <footer>
+    <p>&copy; 2023 Your Company. All rights reserved.</p>
+</footer>
+
+<script src="./signup.js"></script>
+</body>
+</html>
