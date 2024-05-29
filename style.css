@@ -100,14 +100,18 @@ footer p {
     background: #125688;
     color: white;
 }
-  .carousel-inner img {
-    max-width: 70%; /* Adjust the width as needed */
-     /* Adjust the height as needed */
-    margin: auto; /* Center the image */
-}
-
 
 .logo img {
     width: 10px;
     height: auto;
 } 
+
+.carousel-item active img {
+    
+    width: 60%;
+  }
+  .carousel-inner img {
+    max-width: 70%; /* Adjust the width as needed */
+     /* Adjust the height as needed */
+    margin: auto; /* Center the image */
+}
